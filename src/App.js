@@ -24,7 +24,7 @@ class App extends Component {
   deleteToy = (src) => {
     const currentState = this.state.toys
     const newState = currentState.filter((img) => {
-      return img != src
+      return img !== src
     })
     this.setState({
       toys: newState
